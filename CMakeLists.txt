@@ -4,3 +4,7 @@ find_package(MPI REQUIRED)
 
 add_executable(bcast bcast.c)
 target_link_libraries(bcast MPI::MPI_C)
+add_executable(gather gather.c)
+target_link_libraries(gather MPI::MPI_C)
+add_executable(scatter scatter.c)
+target_link_libraries(scatter MPI::MPI_C)
